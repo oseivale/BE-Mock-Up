@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html>
+ <html >
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,49 +7,83 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../styles/main.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/5f88a12042.js"></script>
+         <!-- Compiled and minified CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
     <body>
+        <!-- top navigation menu start -->
+        <nav>
+            <div class="nav-wrapper grey darken-2">
+                <div class="container">
+                <a href="#" class="brand-logo">Black Exec</a>
+                <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="material-icons">menu</i></a>
+                    <ul class="hide-on-med-and-down right">
+                        <li><a>Home</a> </li>
+                        <li><a>Categories</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>  
+            </div>  
+        </nav>
+        <!-- top navigation menu end -->
+        <!-- slide out menu start -->
+        <ul class="sidenav" id="slide_out">
+            <li><a><i class="material-icons">home</i>Home</a></li>                    
+            <li><a><i class="material-icons">email</i>Categories</a></li>                
+            <li><a><i class="material-icons">public</i>Services</a></li>                    
+            <li><a><i class="material-icons">email</i>Contact Us</a></li>    
+        </ul>
+        <!-- slide out menu end -->
         <img src="../logos/Portrait Full Logo Colour - No Background.png" class="img-fluid col-md-4 rounded mx-auto d-block" alt="Responsive image">
-        <form class="container">
-            <div class="row">
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Search">
-                </div>
-                <div class="col-sm-1">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-                <div class="col-sm-1">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
+        <!-- search bar start -->
+        <div class="row container center-align">        
+            <div class=" input-field col s6">
+                <label for="email" class="white-text">Looking for something?</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
             </div>
-        </form>
-        <div class="row all-cards">
-                <div class="card col-md-3"  style="width: 8rem;">
-                        <i class="fas fa-user-friends fa-5x card-img-top"></i> 
-                        <div class="card-body">
-                          <p class="card-text">For You</p>
-                        </div>
-                      </div>
-                      <div class="card col-md-3" style="width: 8rem;">
-                            <i class="fas fa-hand-point-up fa-5x card-img-top"></i> 
-                            <div class="card-body">
-                              <p class="card-text">Featured</p>
-                            </div>
-                          </div>
-                          <div class="card col-md-3" style="width: 8rem;">
-                                <i class="fas fa-shopping-cart fa-5x card-img-top"></i> 
-                                <div class="card-body">
-                                  <p class="card-text">Your Store</p>
-                                </div>
-                              </div>
+            <div class="input-field mx-sm-4">
+                <button type="submit" class="btn btn-primary amber accent-2 black-text">Search</button>
+            </div>    
         </div>
-       
-        
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+        <!-- search bar end -->
+        <!-- card layout start -->
+        <div class="row all-cards">
+            <div class="card col mx-sm-4" style="width: 4rem;">
+                <div class="card-body">
+                    <p class="card-text">For You</p>
+                </div>
+                <i class="fas fa-user-friends fa-3x card-img-top"></i> 
+            </div>
+        <div class="card col mx-sm-4" style="width: 4rem;">
+                
+            <div class="card-body">
+                    <p class="card-text">Featured</p>
+            </div>
+            <i class="fas fa-hand-point-up fa-3x card-img-top"></i> 
+        </div>
+            <div class="card col mx-sm-4" style="width: 4rem;">
+                <div class="card-body">
+                    <p class="card-text">Discover</p>
+                </div>
+            <i class="fas fa-shopping-cart fa-3x card-img-top"></i> 
+            </div>
+        </div> 
+        <!-- card layout end -->
+        <!-- Compiled and minified JavaScript -->
+        <script src="../scripts/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://kit.fontawesome.com/5f88a12042.js"></script>       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            const slide_menu= document.querySelectorAll(".sidenav");
+            M.Sidenav.init(slide_menu, {});
+        </script>
+    </body> 
 </html>
 

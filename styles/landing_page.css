@@ -1,0 +1,13 @@
+
+    body{
+        background-image:  linear-gradient(to right bottom, rgba(207, 204, 189, 0.8), rgba(207, 204, 189, 0.8)), url('../logos/Black _ White Portrait Logo.png');
+        background-size: cover;
+    }
+
+    .row{
+        opacity: 0.8;
+        margin-top:100px;
+    }
+
+  
+ 

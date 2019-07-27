@@ -1,9 +1,40 @@
-.card {
-        margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-        margin-top: 70px;
+body{
+   
+    background-image: linear-gradient(to left, #595956, white , #595956);  
 }
 
+/* .card { */
+    /* float: none; Added */
+    /* margin-bottom: 10px; Added */
+    /* margin-top: 70px; */
+       
+/* } */
 
+i{
+    text-align: center;
+    padding-bottom: 20px;
+    color: grey;
+}
 
+.card-text{
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.5em;
+    color: grey;
+
+}
+
+.all-cards{
+    width: 57%;
+}
+
+.card:hover{
+    background-color: #E9E9EF; 
+    box-shadow: 2px 2px rgb(183, 183, 187);
+    border: none;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
