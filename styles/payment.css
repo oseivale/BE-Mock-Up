@@ -1,7 +1,7 @@
 .s8{
     height: 100vh;
-    background-image: linear-gradient(to right bottom, rgba(47, 72, 126, 0.8), rgba(232, 237, 247, 0.8)), url('https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20(1%20of%201)-5.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')
-   
+    background-image: linear-gradient(to right bottom, rgba(55, 58, 63, 0.8), rgba(232, 237, 247, 0.8)), url('../logos/BE LOGO COLOUR.png');
+   background-size: cover;
  
 }
 
@@ -20,3 +20,65 @@
 .card-title{
     font-size: 2em;
 }
+
+.payment-header{
+    color: white;
+    font-size: 6em;
+    font-family: 'Allura', cursive;
+    padding-top: 40%;
+}
+
+.slogan{
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: white;
+    font-size: 3em;
+    /* padding-left: 450px; */
+    line-height: 0em;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0;
+            top: 0%; }
+    to   { opacity: 1; 
+            }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 20%;
+    top: 20%;
+    overflow: auto; /* Enable scroll if needed */
+    animation-name: fadein;
+    animation-duration: 1.5s;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #myModal{
+      margin-left: 20%;
+      padding: 10px;
+  }
+
+  
